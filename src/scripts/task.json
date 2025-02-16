@@ -1,0 +1,17 @@
+{
+  "targets": [
+    {
+      "endpoint": "pages?populate[blocks][populate]=*",
+      "output": "pages.json"
+    },
+    {
+      "endpoint": "global?populate=*",
+      "output": "global.json"
+    },
+    {
+      "endpoint": "navigation?populate[footer][on][navigation.nav-group][populate]=*&populate[footer][on][navigation.nav-text][populate]=*&populate[navbar][on][navigation.nav-group][populate]=*&populate[navbar][on][navigation.nav-text][populate]=*",
+      "output": "navigation.json"
+    }
+  ],
+  "dest": "public/contents/"
+}
